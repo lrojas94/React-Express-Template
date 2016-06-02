@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target" : "es5",
+        "module": "commonjs",
+        "moduleResolution" : "node",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports" : true, 
+        "jsx" : "react"
+    },
+    "filesGlob": [
+        "./**/*.ts",
+        "!./node_modules/**/*.ts"
+    ],
+    "files": [
+        "./client/app.tsx",
+        "./typings/index.d.ts"
+    ],
+    "compileOnSave": true
+}

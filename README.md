@@ -28,3 +28,15 @@ npm start
 * Express renders index.html with NO DATA FROM THE SERVER.
 * The app can use AJAX to request something from the server API.
 * Within itself, the app uses routes in order to handle different components and such.
+
+
+### FOR TYPESCRIPT ###
+install typings globally: 
+``` npm install -g typings typescript ```
+
+Install react typings:
+```
+typings install dt~react --save --global && typings install dt~react-dom --save --global
+``` 
+
+Name your files ```.tsx``` instead of ```.jsx```.

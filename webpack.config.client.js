@@ -1,6 +1,6 @@
 module.exports = {
     entry: {
-        app : './client/app.jsx' //Use this to add more builds. Different modules don't have to be together on a single file.
+        app : './client/app.tsx' //Use this to add more builds. Different modules don't have to be together on a single file.
     },
     output: {
         filename: 'client/build/[name].bundle.js', //this is the default name, so you can skip it
@@ -8,10 +8,12 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.jsx?$/, loader: 'babel-loader'},
+            {test: /\.rt$/, loader: 'react-templates-loader'},
+            {test: /\.tsx?$/, loader: 'ts-loader'}
+
         ]
     },
     resolve: {
-        extensions: ['', '.js', '.jsx']
+        extensions: ['', '.js','.rt', '.jsx','ts','.tsx']
     }
 };
