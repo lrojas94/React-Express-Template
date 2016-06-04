@@ -8,12 +8,11 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.rt$/, loader: 'react-templates-loader'},
             {test: /\.tsx?$/, loader: 'ts-loader'}
 
         ]
     },
     resolve: {
-        extensions: ['', '.js','.rt', '.jsx','ts','.tsx']
+        extensions: ['', '.js','.jsx','.ts','.tsx']
     }
 };

@@ -1,8 +1,7 @@
 import * as React from 'react';
 import {Link} from 'react-router';
-import $ from 'jquery';
-import * as template from './../views/hello.rt';
-
+import * as $ from 'jquery';
+import {HelloAgain} from "./helloAgain.tsx";
 
 export class Hello extends React.Component<{},{}>{
     displayName : String = 'Hello'
@@ -35,6 +34,16 @@ export class Hello extends React.Component<{},{}>{
     }
 
     render(){
-        return template;
+        return (
+          <div>
+              <div>This is a react hello module </div>
+              <br/>
+              <input type='button' onClick={this.sendGet} value='GET API Data'/>
+              <br/>
+              <input type='button' onClick={this.sendPost} value='POST API Data'/>
+              <br/>
+              <HelloAgain message="this is a test message"  />
+          </div>
+        );
     }
 }
